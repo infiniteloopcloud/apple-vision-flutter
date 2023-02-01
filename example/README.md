@@ -1,6 +1,6 @@
-# flutter_apple_vision_example
+# apple_vision_flutter_example
 
-Demonstrates how to use the flutter_apple_vision plugin.
+Demonstrates how to use the apple_vision_flutter plugin.
 
 ## Getting Started
 

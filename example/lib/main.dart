@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_apple_vision_example/scanner_page.dart';
+import 'package:apple_vision_flutter_example/scanner_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,13 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'flutter_apple_vision_platform_interface.dart';
+import 'apple_vision_flutter_platform_interface.dart';
 import 'recognize_result.dart';
 
-/// An implementation of [FlutterAppleVisionPlatform] that uses method channels.
-class MethodChannelFlutterAppleVision extends FlutterAppleVisionPlatform {
+/// An implementation of [AppleVisionFlutterPlatform] that uses method channels.
+class MethodChannelAppleVisionFlutter extends AppleVisionFlutterPlatform {
   @visibleForTesting
-  final methodChannel = const MethodChannel('flutter_apple_vision');
+  final methodChannel = const MethodChannel('apple_vision_flutter');
 
   @override
   Future<RecognizeResult> recognizeText(Uint8List imageData) =>

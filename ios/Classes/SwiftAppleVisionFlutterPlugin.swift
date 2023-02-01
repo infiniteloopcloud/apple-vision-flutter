@@ -2,10 +2,10 @@ import Flutter
 import UIKit
 import Vision
 
-public class SwiftFlutterAppleVisionPlugin: NSObject, FlutterPlugin {
+public class SwiftAppleVisionFlutterPlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "flutter_apple_vision", binaryMessenger: registrar.messenger())
-        let instance = SwiftFlutterAppleVisionPlugin()
+        let channel = FlutterMethodChannel(name: "apple_vision_flutter", binaryMessenger: registrar.messenger())
+        let instance = SwiftAppleVisionFlutterPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
     

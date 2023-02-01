@@ -1,9 +1,7 @@
-import 'dart:typed_data';
-
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_apple_vision/flutter_apple_vision.dart';
-import 'package:flutter_apple_vision/recognize_result.dart';
+import 'package:apple_vision_flutter/apple_vision_flutter.dart';
+import 'package:apple_vision_flutter/recognize_result.dart';
 import 'package:image/image.dart' as img;
 
 class ScannerPage extends StatefulWidget {
@@ -12,7 +10,7 @@ class ScannerPage extends StatefulWidget {
 }
 
 class _ScannerPageState extends State<ScannerPage> {
-  final _flutterAppleVisionPlugin = FlutterAppleVision();
+  final _AppleVisionFlutterPlugin = AppleVisionFlutter();
 
   CameraController? _controller;
   XFile? imageFile;
@@ -121,7 +119,7 @@ class _ScannerPageState extends State<ScannerPage> {
 
               final imageData = img.encodeJpg(i);
               final recognizeResult =
-                  await _flutterAppleVisionPlugin.recognizeText(imageData);
+                  await _AppleVisionFlutterPlugin.recognizeText(imageData);
 
               setState(() {
                 this.imageWidth = imageWidth.toDouble();
