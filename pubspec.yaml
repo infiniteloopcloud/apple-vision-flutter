@@ -1,0 +1,26 @@
+name: flutter_apple_vision
+description: Flutter plugin to wrap Apple Vision for text recognizing on image data.
+repository: https://github.com/infiniteloopcloud/flutter_apple_vision
+homepage:
+version: 0.1.0
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: FlutterAppleVisionPlugin
