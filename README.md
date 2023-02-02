@@ -1,6 +1,6 @@
-# apple_vision_flutter
+# Apple Vision Futter
 
-A Flutter plugin to recognize text on images with Apple Vision.
+A Flutter plugin recognizes text on images by using Apple Vision.
 
 ## Features
 
@@ -26,3 +26,7 @@ Future<Uint8List> loadAsset() async {
       .then((value) => value.buffer.asUint8List());
 }
 ```
+
+## Contribution
+
+Feel free to open any issue in case you encounter an error or you have a feature suggestion.
